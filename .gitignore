@@ -1,0 +1,22 @@
+*
+!.gitignore
+!README.md
+!LICENSE
+
+# only include bower_components/webcomponentsjs and bower_components/polymer,
+# since other elements have already been valcanized
+!bower_components/
+bower_components/*
+!bower_components/webcomponentsjs/
+!bower_components/webcomponentsjs/webcomponents.min.js
+
+# only include elements/elements.vulcanized.html, instead of including all elements
+!elements/
+!elements/elements.vulcanized.html
+
+!resources/
+!resources/**
+!scripts/
+!scripts/**
+!styles/
+!styles/**
