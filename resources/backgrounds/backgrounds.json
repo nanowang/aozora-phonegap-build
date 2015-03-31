@@ -1,0 +1,11 @@
+{
+  "normal": {
+    "imagePath": "2.jpg"
+  },
+  "happyEnding": {
+    "imagePath": "0.jpg"
+  },
+  "badEnding": {
+    "imagePath": "1.jpg"
+  }
+}
