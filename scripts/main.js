@@ -1,10 +1,6 @@
 (function() {
-  var onDeviceReady;
-
-  document.addEventListener('deviceready', onDeviceReady, false);
-
-  onDeviceReady = function() {
-    return alert('device ready');
-  };
+  document.addEventListener('deviceready', (function() {
+    return console.log('device ready');
+  }), false);
 
 }).call(this);
