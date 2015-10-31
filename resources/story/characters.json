@@ -1,8 +1,14 @@
 {
   "sora": {
-    "name": "Sora"
+    "name": "Sora",
+    "tachies": [
+      "normal"
+    ]
   },
   "haruka": {
-    "name": "Haruka"
+    "name": "Haruka",
+    "tachies": [
+      "normal"
+    ]
   }
 }

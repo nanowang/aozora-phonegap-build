@@ -2,6 +2,9 @@
   "normal": {
     "imagePath": "2.jpg"
   },
+  "bedroom": {
+    "imagePath": "bedroom.jpg"
+  },
   "happyEnding": {
     "imagePath": "0.jpg"
   },

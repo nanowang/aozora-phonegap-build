@@ -1,48 +1,76 @@
 [
   {
     "id": 0,
-    "type": "line",
-    "role": "sora",
-    "text": "line 1",
-    "background": "normal",
-    "tachie": [
-      "sora"
-    ],
+    "type": "video",
+    "video": "opening",
+    "allowSkipping": true,
     "next": 1
   },
   {
     "id": 1,
     "type": "line",
-    "role": "haruka",
-    "text": "line 2",
-    "tachie": [
-      "sora",
-      "miyaho"
+    "role": "sora",
+    "text": "初，鄭武公娶于申，曰武姜，生莊公及共叔段。莊公寤生，驚姜氏，遂惡之。愛共叔段，欲立之。亟請于武公，公弗許。及莊公即位，為之請制。公曰：「制，巖邑也。虢叔死焉；佗邑唯命。」請京，使居之，謂之京城大叔。",
+    "background": "normal",
+    "tachies": [
+      {
+        "sora": "normal"
+      }
     ],
+    "bgm": "ridingTheDragon",
     "next": 2
   },
   {
     "id": 2,
+    "type": "line",
+    "role": "haruka",
+    "text": "line 2",
+    "background": "bedroom",
+    "tachies": [
+      {
+        "sora": "normal"
+      },
+      {
+        "miyaho": "normal"
+      }
+    ],
+    "next": 3
+  },
+  {
+    "id": 3,
+    "type": "line",
+    "role": "haruka",
+    "text": "line 2",
+    "background": "bedroom",
+    "tachies": [
+      {
+        "miyaho": "normal"
+      }
+    ],
+    "next": 4
+  },
+  {
+    "id": 4,
     "type": "options",
     "options": [
       {
         "text": "option 1",
-        "next": 3
+        "next": 5
       },
       {
         "text": "option 2",
-        "next": 4
+        "next": 6
       }
     ]
   },
   {
-    "id": 3,
+    "id": 5,
     "type": "narrate",
     "text": "happy ending",
     "background": "happyEnding"
   },
   {
-    "id": 4,
+    "id": 6,
     "type": "narrate",
     "text": "bad ending",
     "background": "badEnding"
