@@ -8,7 +8,7 @@
 !bower_components/
 bower_components/*
 !bower_components/webcomponentsjs/
-!bower_components/webcomponentsjs/webcomponents.min.js
+!bower_components/webcomponentsjs/webcomponents-lite.min.js
 
 # only include elements/elements.vulcanized.html, instead of including all elements
 !elements/
