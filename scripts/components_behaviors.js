@@ -1,10 +1,6 @@
 (function() {
   var Aozora;
 
-  if (window.Aozora == null) {
-    window.Aozora = {};
-  }
-
   Aozora = window.Aozora;
 
   if (Aozora.behaviors == null) {
