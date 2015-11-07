@@ -1,3 +1,5 @@
 {
-  "opening": "opening.webm"
+  "opening": {
+    "fileName": "opening.webm"
+  }
 }
