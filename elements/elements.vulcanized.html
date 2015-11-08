@@ -16837,7 +16837,7 @@ Custom property | Description | Default
     },
     _resourceFilePath: function(relativePath) {
       if (window.Aozora.env.platform.isPhonegap) {
-        return "../resources/" + relativePath;
+        return "resources/" + relativePath;
       } else {
         return "resources/" + relativePath;
       }
@@ -17593,7 +17593,6 @@ Custom property | Description | Default
 }).call(this);
 </script>
 <dom-module id="aozora-app" assetpath="aozora-app/">
-  <link href="aozora-app/aozora-app.css" rel="import" type="css">
   <template>
     <style>:host {
   @apply(--layout-fit);
