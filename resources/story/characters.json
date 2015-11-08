@@ -1,14 +1,1 @@
-{
-  "sora": {
-    "name": "Sora",
-    "tachies": [
-      "normal"
-    ]
-  },
-  "haruka": {
-    "name": "Haruka",
-    "tachies": [
-      "normal"
-    ]
-  }
-}
+{"sora":{"name":"Sora"},"haruka":{"name":"Haruka"}}

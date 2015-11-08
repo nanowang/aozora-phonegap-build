@@ -1,14 +1,1 @@
-{
-  "normal": {
-    "fileName": "2.jpg"
-  },
-  "bedroom": {
-    "fileName": "bedroom.jpg"
-  },
-  "happyEnding": {
-    "fileName": "0.jpg"
-  },
-  "badEnding": {
-    "fileName": "1.jpg"
-  }
-}
+{"normal":{"fileName":"2.jpg"},"bedroom":{"fileName":"bedroom.jpg"},"happyEnding":{"fileName":"0.jpg"},"badEnding":{"fileName":"1.jpg"}}

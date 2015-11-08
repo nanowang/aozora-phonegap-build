@@ -5,13 +5,16 @@
 
   Aozora.env || (Aozora.env = {});
 
+  Aozora.env.debugging = true;
+
   Aozora.env.platform = {
-    isPhonegap: false
+    isPhonegap: false,
+    device: void 0
   };
 
   document.addEventListener('deviceready', (function() {
-    console.log('device ready');
-    return Aozora.env.platform.isPhonegap = true;
+    Aozora.env.platform.isPhonegap = true;
+    return Aozora.env.device = window.device;
   }), false);
 
 }).call(this);

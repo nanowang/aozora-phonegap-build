@@ -9,10 +9,14 @@
 
   Aozora.behaviors.base = {
     properties: {},
-    ready: function() {
+    created: function() {
+      Aozora.utilities.log("component " + this.nodeName + " getting created");
       if (this.nodeName !== 'AOZORA-APP') {
-        return this.app = Aozora.app;
+        return this._getGlobalVars();
       }
+    },
+    _getGlobalVars: function() {
+      return this.app = Aozora.app;
     },
     _removeSelfDom: function() {
       return Polymer.dom(this.parentNode).removeChild(this);
