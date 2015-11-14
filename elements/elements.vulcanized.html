@@ -12022,6 +12022,206 @@ used in the PolymerElements demo pages
 
 </style>
 <!--
+Typographic styles are provided matching the Material Design standard styles:
+http://www.google.com/design/spec/style/typography.html#typography-standard-styles
+
+To make use of them, apply a `paper-font-<style>` class to elements, matching
+the font style you wish it to inherit.
+
+  <header class="paper-font-display2">Hey there!</header>
+
+Note that these are English/Latin centric styles. You may need to further adjust
+line heights and weights for CJK typesetting. See the notes in the Material
+Design typography section.
+-->
+<style>
+
+.paper-font-display4,
+.paper-font-display3,
+.paper-font-display2,
+.paper-font-display1,
+.paper-font-headline,
+.paper-font-title,
+.paper-font-subhead,
+.paper-font-body2,
+.paper-font-body1,
+.paper-font-caption,
+.paper-font-menu,
+.paper-font-button {
+  font-family: 'Roboto', 'Noto', sans-serif;
+  -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+}
+
+.paper-font-code2,
+.paper-font-code1 {
+  font-family: 'Roboto Mono', 'Consolas', 'Menlo', monospace;
+  -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+}
+
+/* Opt for better kerning for headers & other short labels. */
+.paper-font-display4,
+.paper-font-display3,
+.paper-font-display2,
+.paper-font-display1,
+.paper-font-headline,
+.paper-font-title,
+.paper-font-subhead,
+.paper-font-menu,
+.paper-font-button {
+  text-rendering: optimizeLegibility;
+}
+
+/*
+"Line wrapping only applies to Body, Subhead, Headline, and the smaller Display
+styles. All other styles should exist as single lines."
+*/
+.paper-font-display4,
+.paper-font-display3,
+.paper-font-title,
+.paper-font-caption,
+.paper-font-menu,
+.paper-font-button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.paper-font-display4 {
+  font-size: 112px;
+  font-weight: 300;
+  letter-spacing: -.044em;
+  line-height: 120px;
+}
+
+.paper-font-display3 {
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: -.026em;
+  line-height: 60px;
+}
+
+.paper-font-display2 {
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: -.018em;
+  line-height: 48px;
+}
+
+.paper-font-display1 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 40px;
+}
+
+.paper-font-headline {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -.012em;
+  line-height: 32px;
+}
+
+.paper-font-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.paper-font-subhead {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.paper-font-body2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.paper-font-body1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.paper-font-caption {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  line-height: 20px;
+}
+
+.paper-font-menu {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.paper-font-button {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.018em;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.paper-font-code2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.paper-font-code1 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+</style>
+<style>
+.shadow-transition {
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.shadow-elevation-2dp {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-elevation-3dp {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+              0 1px 8px 0 rgba(0, 0, 0, 0.12),
+              0 3px 3px -2px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-elevation-4dp {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+              0 1px 10px 0 rgba(0, 0, 0, 0.12),
+              0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-elevation-6dp {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+              0 1px 18px 0 rgba(0, 0, 0, 0.12),
+              0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-elevation-8dp {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12),
+              0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+.shadow-elevation-16dp {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+              0  6px 30px 5px rgba(0, 0, 0, 0.12),
+              0  8px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+</style>
+<!--
 Material design: [Cards](https://www.google.com/design/spec/components/cards.html)
 
 `paper-material` is a container that renders two shadows on top of each other to
@@ -16953,8 +17153,8 @@ Custom property | Description | Default
 </style>
     <iron-image class="logo" src="../resources/images/logo.svg"></iron-image>
     <paper-button on-tap="_startBtnOnTap">START</paper-button>
-    <paper-button>button2</paper-button>
-    <paper-button>button3</paper-button>
+    <paper-button>LOAD</paper-button>
+    <paper-button>GALLERY</paper-button>
   </template>
 </dom-module>
 <script>(function() {
@@ -17128,7 +17328,7 @@ Custom property | Description | Default
 <dom-module id="aozora-sentence" assetpath="aozora-sentence/">
   <template>
     <style>:host p.content {
-  @apply(--paper-font-headline); }
+  @apply(--paper-font-body2); }
 </style>
     <p class="content">{{ sentence }}</p>
   </template>
@@ -17155,8 +17355,13 @@ Custom property | Description | Default
   background: whitesmoke;
   padding: 0 1em; }
   :host .node.line p.role {
-    @apply(--paper-font-headline);
-    font-weight: bold; }
+    @apply(--paper-font-body1); }
+  :host .node.line .sentence-wrapper {
+    padding: 1em; }
+  :host .node.narrate {
+    padding: 1em; }
+    :host .node.narrate p {
+      @apply(--paper-font-body1); }
   :host .node.options p {
     cursor: pointer;
     transition: background-color ease-in-out 0.3s; }
@@ -17164,13 +17369,17 @@ Custom property | Description | Default
       background-color: lightgrey; }
 </style>
     <template if="{{nodeTypeIsLine}}" is="dom-if">
-      <div class="node line">
-        <p class="role">{{ _roleNameOfLine(node) }}</p>
-        <aozora-sentence sentence="{{node.text}}"></aozora-sentence>
+      <div class="node line horizontal layout">
+        <div class="role-wrapper vertical layout center-justified center">
+          <p class="role">{{ _roleNameOfLine(node) }}</p>
+        </div>
+        <div class="sentence-wrapper flex vertical layout center-justified center">
+          <aozora-sentence flex="" sentence="{{node.text}}"></aozora-sentence>
+        </div>
       </div>
     </template>
     <template if="{{nodeTypeIsNarrate}}" is="dom-if">
-      <div class="node narrate">
+      <div class="node narrate horizontal layout center-justified">
         <p>{{ node.text }}</p>
       </div>
     </template>
@@ -17237,8 +17446,14 @@ Custom property | Description | Default
 </script>
 <dom-module id="aozora-tachie" assetpath="aozora-tachie/">
   <template>
-    <style></style>
-    <iron-image id="image" src="{{currentTachieResource.filePath}}"></iron-image>
+    <style>:host {
+  height: 100%;
+  @apply(--layout-horizontal); }
+  :host iron-image {
+    height: 100%;
+    @apply(--layout-flex-auto); }
+</style>
+    <iron-image id="image" sizing="contain" src="{{currentTachieResource.filePath}}"></iron-image>
   </template>
 </dom-module>
 <script>(function() {
@@ -17313,7 +17528,11 @@ Custom property | Description | Default
   <template>
     <style>:host {
   @apply(--layout-horizontal);
-  @apply(--layout-around-justified); }
+  @apply(--layout-around-justified);
+  @apply(--layout-end);
+  height: 60%; }
+  :host aozora-tachie {
+    @apply(--layout-flex-auto); }
 </style>
     <template as="tachie" is="dom-repeat" items="{{tachies}}">
       <aozora-tachie tachie="{{tachie}}"></aozora-tachie>
@@ -17342,6 +17561,9 @@ Custom property | Description | Default
   @apply(--layout-fit);
   @apply(--layout-vertical);
   @apply(--layout-center-justified); }
+  :host video {
+    width: 100%;
+    height: 100%; }
 
 :host(.hide) {
   display: none !important; }
@@ -17499,7 +17721,8 @@ Custom property | Description | Default
     <style>:host {
   @apply(--layout-flex);
   @apply(--layout-horizontal);
-  @apply(--layout-justified); }
+  @apply(--layout-justified);
+  background: rgba(255, 255, 255, 0.7); }
 
 :host(.hide) {
   visibility: hidden; }
@@ -17615,7 +17838,7 @@ Custom property | Description | Default
   :host #bgm {
     z-index: 3;
     position: absolute;
-    top: 1em;
+    top: 8px;
     right: 1em; }
 </style>
     <aozora-resources id="resources"></aozora-resources>
